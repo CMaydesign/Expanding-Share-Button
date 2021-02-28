@@ -34,24 +34,25 @@ span {
     transition: 0.6s linear;
 }
 
-.share:hover span {
+
+/* .share:hover a {
     transform: translateX(-100%);
     transition-delay: 0.3s;
-}
+} */
 
 .share a {
     flex: 1;
     font-size: 26px;
-    color: #c3d940;
-    text-align: center;
-    transform: translateX(-100%);
-    opacity: 0;
+    background: #c3d940;
+    position: relative;
+    height: 100%;
+    /* opacity: 0; */
     transition: 0.3s linear;
 }
 
 .share:hover a {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(300%);
 }
 
 
