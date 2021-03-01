@@ -9,12 +9,14 @@ body {
     transform: translate(-50%, -50%);
 }
 
+div {
+    display: inline-block;
+}
+
 .share {
     width: 280px;
     height: 80px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     position: relative;
     cursor: pointer;
     transition: 1.8s ease;
@@ -34,25 +36,27 @@ span {
     transition: 0.6s linear;
 }
 
-
-/* .share:hover a {
-    transform: translateX(-100%);
-    transition-delay: 0.3s;
-} */
-
-.share a {
+.share .links {
     flex: 1;
     font-size: 26px;
     background: #c3d940;
-    position: relative;
-    height: 100%;
-    /* opacity: 0; */
+    vertical-align: middle;
+    text-align: center;
     transition: 0.3s linear;
 }
 
-.share:hover a {
+.share:hover .links {
     opacity: 1;
-    transform: translateX(300%);
+    transform: translateX(100%);
+}
+
+a {
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    padding: 5%;
+    margin: 5%;
+    text-align: center;
 }
 
 
